@@ -50,17 +50,19 @@ body {
   place-content: center;
   height: auto;
   min-height: 100vh;
-  padding: 3.75rem 1.25rem;
   background-color: hsl(0deg, 0%, 95%);
+}
+
+main {
+  margin: 3.75rem 1.25rem;
+  max-width: 57.5rem;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 57.5rem;
-  height: 100%;
+  flex-flow: row wrap;
   min-height: 31.2844rem;
+  margin-top: 2.625rem;
   overflow: hidden;
   border-radius: 0.625rem;
 }
@@ -163,12 +165,4 @@ p, .btn {
     cursor: pointer;
   }
 
-}
-
-@media screen and (min-width: 1440px) {
-  
-  body {
-    padding: 9.5rem 1.25rem;
-  }
-  
 }
