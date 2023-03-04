@@ -99,33 +99,27 @@ p, .btn {
   font-weight: 400;
 }
 
-.btn-container {
-  position: relative;
-  display: grid;
-  place-content: center;
-  width: fit-content;
-  height: auto;
-  border-radius: 3.125rem;
-  overflow: hidden;
-  margin-top: auto;
-}
-
 .btn {
+  position: relative;
   text-decoration: none;
   width: fit-content;
+  overflow: hidden;
   padding: 0.75rem 1.875rem;
   border: 0.125rem solid hsl(0deg, 0%, 95%);
   border-radius: 3.125rem;
+  margin-top: auto;
   z-index: 1;
   transition: color 0.5s ease;
 }
 
-.btn-wrapper {
+.btn::after {
   position: absolute;
+  content: "";
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+  z-index: -1;
   background-color: hsl(0deg, 0%, 95%);
   transition: transform 0.5s ease;
 }
@@ -156,11 +150,11 @@ p, .btn {
 
 @media (hover: hover) {
 
-  .btn-container:hover .btn-wrapper {
+  .btn:hover::after {
     transform: translateY(100%);
   }
   
-  .btn-container:hover .btn {
+  .btn:hover {
     color: hsl(0deg, 0%, 95%);
     cursor: pointer;
   }
