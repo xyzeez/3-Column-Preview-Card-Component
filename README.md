@@ -47,9 +47,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [ARIA: button role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role)
-- [aria-hidden](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden)
-
+- [::after](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
 
 ## Author
 
