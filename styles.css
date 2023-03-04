@@ -1,0 +1,166 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+  
+  /*
+  CSS Reset ends
+*/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: auto;
+  min-height: 100vh;
+  padding: 3.75rem 1.25rem;
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 57.5rem;
+  height: 100%;
+  min-height: 31.2844rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+}
+
+.card {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  padding: 3rem;
+}
+
+.icon {
+  width: 100%;
+  max-width: 4rem;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 95%);
+}
+
+p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+p, .btn {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.btn-container {
+  position: relative;
+  display: grid;
+  place-content: center;
+  width: fit-content;
+  height: auto;
+  border-radius: 3.125rem;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.btn {
+  text-decoration: none;
+  width: fit-content;
+  padding: 0.75rem 1.875rem;
+  border: 0.125rem solid hsl(0deg, 0%, 95%);
+  border-radius: 3.125rem;
+  z-index: 1;
+  transition: color 0.5s ease;
+}
+
+.btn-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: hsl(0deg, 0%, 95%);
+  transition: transform 0.5s ease;
+}
+
+.card1 {
+  background-color: hsl(31deg, 77%, 52%);
+}
+
+.card1 .btn {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.card2 {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.card2 .btn {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card3 .btn {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (hover: hover) {
+
+  .btn-container:hover .btn-wrapper {
+    transform: translateY(100%);
+  }
+  
+  .btn-container:hover .btn {
+    color: hsl(0deg, 0%, 95%);
+    cursor: pointer;
+  }
+
+}
